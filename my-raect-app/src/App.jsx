@@ -8,7 +8,10 @@ import APOD from './components/APOD';
 function App() {
   return (
     <div className="container">
-      <div className="row">
+      <div className="mainImg">
+      <APOD/>
+      </div>
+      <div className="row" style={{ marginTop: '100px'}}>
       <div className="col image-container">
           <img src="https://apod.nasa.gov/apod/image/2404/20240408h14.jpg" alt="NASA Image" className="img-fluid" />
         </div>
@@ -26,7 +29,6 @@ function App() {
           4
         </div>
       </div>
-<APOD/>
     </div>
   );
 }
