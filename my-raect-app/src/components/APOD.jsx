@@ -16,11 +16,11 @@ const APOD = () => {
   }, []);
 
   return (
-    <div>
+    <div className='apod'>
       {apodData && (
         <>
           <h2>{apodData.title}</h2>
-          <img src={apodData.hdurl} alt={apodData.title} />
+          <img className='mainImg1' src={apodData.hdurl} alt={apodData.title} />
           <p className="description">{apodData.explanation}</p>
         </>
       )}
