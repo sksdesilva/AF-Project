@@ -1,0 +1,23 @@
+/* styles.css */
+.image-container {
+    position: relative;
+    margin-left: 100px;
+    padding: 100px;
+    background: red;
+    width: 700px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
