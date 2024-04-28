@@ -21,4 +21,42 @@
     transform: scale(1.1);
   }
   
+  /* Home.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .blue {
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 100px;
+    background: blue;
+  }
+
+  .gray {
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 100px;
+    background: gray;
+  }
+
+  .red {
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 100px;
+    background: red;
+  }
+}
+
  
