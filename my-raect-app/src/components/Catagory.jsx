@@ -31,7 +31,7 @@ function Category() {
             onMouseLeave={handleMouseLeave}
           />
           {highlighted === 1 && (
-            <div className="overlay" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'white', padding: '10px' }}>img 1</div>
+            <div className="overlay" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'white', padding: '10px' }}>Earth resolution</div>
           )}
         </div>
         <div
@@ -44,13 +44,13 @@ function Category() {
           }}
         >
           <img
-            src="https://api.nasa.gov/EPIC/archive/natural/2019/05/30/png/epic_1b_20190530011359.png?api_key=DEMO_KEY"
+            src="http://apod.nasa.gov/apod/image/1310/velafilaments_jadescope_960.jpg"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={handleMouseLeave}
           />
           {highlighted === 2 && (
-            <div className="overlay" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'white', padding: '10px' }}>img 2</div>
+            <div className="overlay" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'white', padding: '10px' }}>Earth resolution</div>
           )}
         </div>
       </div>
