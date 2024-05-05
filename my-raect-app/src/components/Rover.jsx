@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { fetchCuriosityPhotos, extractImageUrls } from '../api/CommonAPI';
+import '../styles/Home.css';
 
 function Rover() {
   // State to store the user-entered date
@@ -54,9 +55,15 @@ function Rover() {
       </form>
       {imageUrls.length > 0 ? (
         <div className="image-grid">
-          {/* Show only the first 5 images */}
-          {imageUrls.slice(0, 5).map((imageUrl, index) => (
-            <img key={index} src={imageUrl} alt={`Curiosity Rover Photo ${index + 1}`} />
+          {/* Display images in a grid */}
+          {imageUrls.slice(0, 6).map((imageUrl, index) => (
+            <div className="image-wrapper" key={index}>
+              <img
+                className="image-item"
+                src={imageUrl}
+                alt={`Curiosity Rover Photo ${index + 1}`}
+              />
+            </div>
           ))}
         </div>
       ) : (
