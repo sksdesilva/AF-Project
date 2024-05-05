@@ -76,4 +76,40 @@
   }
 }
 
+/* rover */
+.rover-container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between images */
+}
+
+.image-wrapper {
+  /* Maintain two images per row layout for larger screens */
+  width: 50%;
+  box-sizing: border-box; /* Include border/padding in calculations */
+  margin: 0 auto; /* Center images within their wrappers (optional) */
+}
+
+.image-item {
+  width: 100%; /* Ensures each image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness (consideration for very large screens) */
+
+@media (min-width: 801px) { /* Adjust breakpoint as needed */
+  .image-wrapper {
+    /* Adjust width based on desired number of images per row */
+    width: calc(50% - 10px); /* Account for gap between images */
+  }
+}
+
+
+
+
  
