@@ -1,0 +1,47 @@
+.apod {
+  max-width: 80%; /* Adjust based on your desired maximum width */
+  margin: 0 auto; /* Center the component horizontally */
+  padding: 20px;
+}
+
+.apod-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mainImg1 {
+  display: block;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media queries for further responsiveness (optional) */
+
+@media (max-width: 768px) {
+  .apod {
+    padding: 10px;
+  }
+
+  .apod-title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Specific styles for smaller screens (like iPhone XE) */
+
+  .apod-title {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.7rem;
+  }
+}
